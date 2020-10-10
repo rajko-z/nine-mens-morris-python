@@ -8,6 +8,8 @@ def getNumberOf2PeacesConfig(state, player):
 			number += 1
 		if state.board[trio[1]] == state.board[trio[2]] == player and state.board[trio[0]] in g.EMPTYCELL.values():
 			number += 1
+		if state.board[trio[0]] == state.board[trio[2]] == player and state.board[trio[1]] in g.EMPTYCELL.values():
+			number += 1
 	return number
 
 
@@ -188,9 +190,9 @@ def evalute(state, phase):
 				1086 * winningConfiguration(state)
 
 	elif phase == 'FLY':
-		result =10 * differenceIn2PeacesConfig(state) + \
-				3 * differenceIn3PeacesConfig(state) +\
-				16 * closedMorris(state) + \
+		result =16 * differenceIn2PeacesConfig(state) + \
+				10 * differenceIn3PeacesConfig(state) +\
+				1 * closedMorris(state) + \
 				1190 * winningConfiguration(state)
 	return result
 
