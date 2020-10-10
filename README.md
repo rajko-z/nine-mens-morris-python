@@ -1,4 +1,9 @@
 # Nine-Mans-Morris-Python
+![](https://img.shields.io/badge/game-theory-green)
+![](https://img.shields.io/badge/minimax-algorithm-blue)
+![](https://img.shields.io/badge/alpha--beta-pruning-green)
+![](https://img.shields.io/badge/pure-python-blue) 
+
 Popular ancient game Nine Man's Morris implemented in python as console aplication.
 
 ## How it was implemented?
@@ -32,7 +37,7 @@ You can remove that if you want, or you can install it via  ***python install pl
 ## Gameplay screenshot:
 ![](images/gameplay.png)
 
-## How can i contribute?
+## Contributing
 
 Well, there i a lot of to improve on this project, for example:
 - you can change heuristic or improve decision-making logic of computer. The module *ai_play.py* contains a lot of "complicated logic"
